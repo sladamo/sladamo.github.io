@@ -11,7 +11,7 @@ $(document).ready(function() {
 // It also updates the counter at the top of the screen.
 function addComment() {
   console.log("Thanks for your feedback!");
-  var text = window.prompt("New Comment");
+  var text = window.prompt("Thanks for your feedback.");
   var delete_link = '<a href="#" class="link-delete">(Delete)</a>'
   $("ol").append("<li>" + text + " " + delete_link + "</li>");
 
