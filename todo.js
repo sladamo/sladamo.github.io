@@ -19,12 +19,12 @@ function addComment() {
   $(".total").html(numComments + " comments");
 
   // Challenge: Differentiate between 1 item vs. more items
-if (numComments == 1) {
-  $(".total").html(numComments + " comment");
-}
-else {
-  $(".total").html(numComments + " comments");
-}
+  if (numComments == 1) {
+    $(".total").html(numComments + " comment");
+  }
+  else {
+    $(".total").html(numComments + " comments");
+  }
 }
 
 
