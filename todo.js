@@ -23,7 +23,7 @@ if (numComments == 1) {
   $(".total").html(numComments + " comment");
 }
 else {
-  $(".total").html(numComments + " comment");
+  $(".total").html(numComments + " comments");
 }
 }
 
