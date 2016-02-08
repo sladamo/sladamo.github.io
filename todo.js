@@ -10,11 +10,10 @@ $(document).ready(function() {
 // and then appends it to the existing list of items.
 // It also updates the counter at the top of the screen.
 function addComment() {
-  console.log("Thanks for your feedback!");
   var text = window.prompt("Thanks for your feedback.");
   var delete_link = '<a href="#" class="link-delete">(Delete)</a>'
   $("ol").append("<li>" + text + " " + delete_link + "</li>");
-
+  console.log("Thanks for your feedback!");
   var numComments = $("li").length;
   $(".total").html(numComments + " comments");
 
@@ -33,7 +32,6 @@ function addComment() {
 // item the user wishes to remove.
 function deleteComment(event) {
   console.info(event);
-  // $(event.target).remove();
   $(event.target).parent().remove();
 
   var numComments = $("li").length;
