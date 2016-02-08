@@ -10,12 +10,12 @@ $(document).ready(function() {
 // and then appends it to the existing list of items.
 // It also updates the counter at the top of the screen.
 function addItem() {
-  console.log("Yup!");
+  console.log("Thanks for the feedback!");
   var text = window.prompt("New Comment");
   var delete_link = '<a href="#" class="link-delete">(Delete)</a>'
   $("ol").append("<li>" + text + " " + delete_link + "</li>");
 
-  var numItems = $("li").length;
+  var numItems = $("li").length-6;
   $(".total").html(numItems + " comments");
 
   // Challenge: Differentiate between 1 item vs. more items
@@ -36,7 +36,7 @@ function deleteItem(event) {
   // $(event.target).remove();
   $(event.target).parent().remove();
 
-  var numItems = $("li").length;
+  var numItems = $("li").length-6;
   $(".total").html(numItems + " comments");
 
   if (numItems == 1) {
