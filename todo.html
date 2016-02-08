@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>To Do</title>
+    <title>Visitor Feedback</title>
     <script src="https://code.jquery.com/jquery-2.2.0.js" charset="utf-8"></script>
     <script src="todo.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -11,25 +11,32 @@
   <body>
 
     <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <ul class="nav nav-tabs">
+        <li role="presentation"><a href="index.html">Welcome</a></li>
+        <li role="presentation"><a href="usa.html">USA</a></li>
+        <li role="presentation"><a href="caribbean.html">Caribbean</a></li>
+        <li role="presentation"><a href="europe.html">Europe</a></li>
+        <li role="presentation"><a href="future.html">Future Plans</a></li>
+        <li role="presentation"><a href="todo.html">Visitor Feedback</a></li>
+      </ul>
+    </nav>
+    </div>
 
+    <div class="container">
       <div class="page-header">
         <h1>
-          To Do
-          <small><span class="total">0 items</span></small>
-          <a class="btn btn-primary pull-right" href="#">Add Item</a>
+          Visitor Feedback
+          <small><span class="total">0 comments</span></small>
+          <a class="btn btn-primary pull-right" href="#">Add Comment</a>
         </h1>
       </div>
 
       <div class="row">
         <div class="col-md-12">
-          <ol class="todo-list">
-
-          </ol>
+          <ol class="todo-list"></ol>
         </div>
       </div>
-
     </div>
-
   </body>
-
 </html>

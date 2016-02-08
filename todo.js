@@ -11,19 +11,19 @@ $(document).ready(function() {
 // It also updates the counter at the top of the screen.
 function addItem() {
   console.log("Yup!");
-  var text = window.prompt("New To-Do Item");
+  var text = window.prompt("New Comment");
   var delete_link = '<a href="#" class="link-delete">(Delete)</a>'
   $("ol").append("<li>" + text + " " + delete_link + "</li>");
 
   var numItems = $("li").length;
-  $(".total").html(numItems + " items");
+  $(".total").html(numItems + " comments");
 
   // Challenge: Differentiate between 1 item vs. more items
 if (numItems == 1) {
-  $(".total").html(numItems + " item");
+  $(".total").html(numItems + " comment");
 }
 else {
-  $(".total").html(numItems + " items");
+  $(".total").html(numItems + " comments");
 }
 }
 
@@ -37,12 +37,12 @@ function deleteItem(event) {
   $(event.target).parent().remove();
 
   var numItems = $("li").length;
-  $(".total").html(numItems + " items");
+  $(".total").html(numItems + " comments");
 
   if (numItems == 1) {
-    $(".total").html(numItems + " item");
+    $(".total").html(numItems + " comment");
   }
   else {
-    $(".total").html(numItems + " items");
+    $(".total").html(numItems + " comments");
   }
 }
