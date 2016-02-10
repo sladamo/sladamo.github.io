@@ -10,7 +10,7 @@ $(document).ready(function() {
 // and then appends it to the existing list of items.
 // It also updates the counter at the top of the screen.
 function addItem() {
-  console.log("Thanks for the feedback!");
+  console.log("Thanks for your recommendation(s)!");
   var text = window.prompt("New Comment");
   var delete_link = '<a href="#" class="link-delete">(Delete)</a>'
   $("ol").append("<li>" + text + " " + delete_link + "</li>");
